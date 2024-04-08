@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC calculator</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul id="uls">
+                <li><h1>IMC.</h1></li>
+                <li class="list">O que é</li>
+                <li class="list">Como calcular</li>
+                <li class="list">Tipos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+
+
+
+        <div><img src="img/undraw_working_out_re_nhkg.svg" alt=""></div>
+
+       <div id="container_principal" >
+        <h1>Calcule seu IMC</h1>
+        <h3>Digite seu nome</h3>
+        <input type="text" name="name" id="name">
+        <h3>Digite sua altura</h3>
+        <input type="number" name="altura" id="altura">
+        <h3>Digite seu peso em KG</h3>
+        <input type="number" name="peso" id="peso">
+        <button id="buttons">Calcular</button>
+       </div>
+
+       <div class="container_segundo"> 
+        <h3>Ola! <span id="myname"></span></h3>
+        <h3>Seu IMC é igual á <span id="result">29</span> <br>
+        você está: <span id="result2"></span></h3>
+        <h3>A classificação:</h3>
+        <ul>
+            <li>MENOR QUE 18,5 - MAGREZA</li>
+            <li>ENTRE 18,5 E 24,9 - NORMAL</li>
+            <li>ENTRE 25,0 E 29,9 - SOBREPESO</li>
+            <li>ENTRE 30,0 E 39,9 - OBESIDADE</li>
+            <li>MAIOR QUE 40,0 - OBESIDADE GRAVE</li>
+        </ul>
+        <button id="voltar">Voltar</button>
+       </div>
+       
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
